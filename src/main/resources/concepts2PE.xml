@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parthenos-entities>
+	
+	<entity name="">
+		<property name="">
+		<concept/>
+		<fallback-patterns/>
+		</property>
+	</entity>
+	
+	<entity name="volatileDataset">
+	
+		<!-- Object properties -->
+		<xi:include href="object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>	
+
+		<!-- Software properties -->
+		<xi:include href="dataset.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+			
+
+	</entity>
+	
+	<entity name="persistentDataset">
+	
+		<!-- Object properties -->
+		<xi:include href="object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>	
+
+		<!-- Software properties -->
+		<xi:include href="dataset.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+		
+		<!-- PersistantDigitalObject properties -->
+		<xi:include href="persistantDigitalObject.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>	
+
+	</entity>
+	
+	
+	
+
+	<entity name="volatileSoftware">
+	
+		<!-- Object properties -->
+		<xi:include href="object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>	
+
+		<!-- Software properties -->
+		<xi:include href="software.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+
+	</entity>
+	
+	
+	<entity name="persistentSoftware">
+	
+		<!-- Object properties -->
+		<xi:include href="object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>	
+
+		<!-- Software properties -->
+		<xi:include href="software.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+		
+		<!-- PersistantDigitalObject properties -->
+		<xi:include href="persistantDigitalObject.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>		
+
+	</entity>
+	
+	
+
+	
+</parthenos-entities>
