@@ -7,8 +7,19 @@ To avoid repetition of mappings PE hierarchy is kept by making mappings in separ
 Format of the mappings:
 
 	<entity name="">
-		<property name="">
-		  <concept name=""/> -> CCR or purl concept. Name is optional. Datcat urls from facetConcepts.xml are removed 
-		  <pattern/>         -> xpath
-		</property>
+		<properties>
+			<property name="">
+			  <concept name=""/> -> CCR or purl concept. Name is optional. Datcat urls from facetConcepts.xml are removed 
+			  <pattern/>         -> xpath
+			  <blacklistPattern/> -> if concept is found on xpath that is listed in black list patterns this xpath is removed from mapping
+			</property>
+		</properties>
+		...
+		<properties>
+			<property name="">
+			  <concept name=""/>
+			  <pattern/>
+			  <blacklistPattern/>
+			</property>
+		</properties>
 	</entity>

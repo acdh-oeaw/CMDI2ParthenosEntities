@@ -1,74 +1,78 @@
-<property name="encodingType">
-	<pattern>cmd:CMD/cmd:Resources/cmd:ResourceProxyList/cmd:ResourceProxy/cmd:ResourceType/@mimetype</pattern>
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
 	
-	<!-- vlo:format -->
-	<concept name="mime type">http://hdl.handle.net/11459/CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df</concept>
-	<concept>http://purl.org/dc/terms/format</concept>	
-</property>
-
-<property name="schema">	
-	<pattern>cmd:CMD/@xsi:schemaLocation</pattern>
-	<pattern>ccmd:CMD/cmd:Header/cmd:MdProfile</pattern>
-</property>
-
-<property name="subject">
-	<!-- investigate additional concepts in CCR -->
-	<!-- vlo:subject -->
-	<concept>http://hdl.handle.net/11459/CCR_C-2591_f769d93b-c007-d2c9-aff2-99e9177e5764</concept>
-	<concept>http://hdl.handle.net/11459/CCR_C-6147_ebed915e-f911-f128-cddc-466aa41c9c73</concept>
-	<concept>http://hdl.handle.net/11459/CCR_C-5316_2c6244b4-4f10-5e8e-49b6-26fbf7004791</concept>
-	<concept>http://hdl.handle.net/11459/CCR_C-6543_92dacb75-3098-0d5a-0665-94ddb6274f8c</concept>
-	<concept>http://purl.org/dc/terms/subject</concept>
-	<concept>http://purl.org/dc/elements/1.1/subject</concept>
-	
-	<pattern>/cmd:CMD/cmd:Components/cmdp:OLAC-DcmiTerms/cmdp:subject/@olac-linguistic-field</pattern>
-	<pattern>/cmd:CMD/cmd:Components/cmdp:OLAC-DcmiTerms/cmdp:subject[@dcterms-type="LCSH"]/text()</pattern>
-	<pattern>/cmd:CMD/cmd:Components/cmdp:mods/cmdp:subject/cmdp:Topic/text()</pattern>
-	<pattern>/cmd:CMD/cmd:Components/cmdp:media-session-profile/cmdp:media-session/cmdp:Content/cmdp:Topic/text()</pattern>
-	<!--  BAS -->
-	<pattern>/cmd:CMD/cmd:Components/cmdp:media-session-profile/cmdp:media-session/cmdp:Content/cmdp:Task/text()</pattern>
-	<!--  BAS -->
-	<pattern>/cmd:CMD/cmd:Components/cmdp:media-corpus-profile/cmdp:Corpus/cmdp:Topic/text()</pattern>
-	<!--  BAS media-corpus-profile -->
-	<pattern>/cmd:CMD/cmd:Components/cmdp:IDSAGD_Event/cmdp:IDSAGD_SpeechEvent/cmdp:Topic/text()</pattern>
-	<!-- IDS IDSAGD_Event -->
-	<pattern>/cmd:CMD/cmd:Components/cmdp:IDSAGD_Corpus/cmdp:Corpus/cmdp:Modality/cmdp:Modality/text()</pattern>
-	<!-- IDS IDSAGD_Corpus -->
-	<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:teiHeader/cmdp:profileDesc/cmdp:textClass</blacklistPattern>
-	<!-- BBAW -->
-</property>
-
-<property name="spatiotemporalCoverage">
-	<!-- investigate additional concepts in CCR -->
-	<!-- vlo:temporalCoverage -->
+	<property name="encodingType">
+		<pattern>cmd:CMD/cmd:Resources/cmd:ResourceProxyList/cmd:ResourceProxy/cmd:ResourceType/@mimetype</pattern>
 		
-	<concept>http://hdl.handle.net/11459/CCR_C-2502_747eb0cd-03e9-cffb-34cc-d0c8c77e4c5a</concept>
-	<!-- dc:coverage restricted to temporal coverage -->
-	<concept>http://hdl.handle.net/11459/CCR_C-3664_eb600f47-5123-efbe-251b-d952c65fc847</concept>
-	<!-- “Basic time coverage information.” -->
-	<concept>http://hdl.handle.net/11459/CCR_C-4343_0d6e80e7-6f6c-5497-eac6-29b95a5fa9ec</concept>
-	<!-- Intervall. Described as “a : a space of time between events or states” -->
-	<concept>http://hdl.handle.net/11459/CCR_C-5742_66aaccdd-f1d0-a6a6-a4fb-efa704e06d8b</concept>
-	<!-- End time. Described as “Time at which an event ends”. -->
-	<concept>http://hdl.handle.net/11459/CCR_C-3654_f1608e88-95e6-4233-5d21-5312e76de32d</concept>
-	<!-- Start range. Described as “The beginning of a range.” used in the component TimeCoverage http://catalog.clarin.eu/ds/ComponentRegistry/?item=clarin.eu:cr1:c_1349361150714 -->
-	<concept>http://hdl.handle.net/11459/CCR_C-3655_bc4c2656-2946-0be9-49f0-021a811e531b</concept>
-	<!-- End range. Described as “The end of a range.” used in the component TimeCoverage http://catalog.clarin.eu/ds/ComponentRegistry/?item=clarin.eu:cr1:c_1349361150714 -->
+		<!-- vlo:format -->
+		<concept name="mime type">http://hdl.handle.net/11459/CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df</concept>
+		<concept>http://purl.org/dc/terms/format</concept>	
+	</property>
 	
-	<pattern>/cmd:CMD/cmd:Components/cmdp:OLAC-DcmiTerms/cmdp:coverage/text()</pattern>
-	<!-- dc:coverage, also contains spatial coverage info -->
-	<pattern>/cmd:CMD/Components/cmdp:teiHeader/cmdp:fileDesc/cmdp:sourceDesc/cmdp:biblFull/cmdp:publicationStmt/cmdp:date[@type="publication"]/text()</pattern>
-	<!-- BBAW teiHeader -->
-	<pattern>/cmd:CMD/cmd:Components/cmdp:teiHeader/cmdp:fileDesc/cmdp:publicationStmt/cmdp:date[@type="publication"]/text()</pattern>
-	<!-- BBAW teiHeader -->
-	<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:TextCorpusProfile/cmdp:Project/cmdp:Duration</blacklistPattern>
-	<!-- IMS TextCorpusProfile -->
-	<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:ToolProfile/cmdp:Project/cmdp:Duration</blacklistPattern>
-	<!-- IMS ToolProfile -->
-	<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:LexicalResourceProfile/cmdp:Project/cmdp:Duration/cmdp:CompletionYear</blacklistPattern>
-	<!-- IMS c:LexicalResourceProfile -->
-	<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:MultimodalCorpus/cmdp:Project/cmdp:Duration/cmdp:CompletionYear</blacklistPattern>
-	<!-- c:MultimodalCorpus -->
-	<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:MultimodalCorpus/cmdp:Publications/cmdp:Publication/cmdp:PublicationDate</blacklistPattern>
-	<!-- c:MultimodalCorpus -->
-</property>
+	<property name="schema">	
+		<pattern>cmd:CMD/@xsi:schemaLocation</pattern>
+		<pattern>ccmd:CMD/cmd:Header/cmd:MdProfile</pattern>
+	</property>
+	
+	<property name="subject">
+		<!-- investigate additional concepts in CCR -->
+		<!-- vlo:subject -->
+		<concept>http://hdl.handle.net/11459/CCR_C-2591_f769d93b-c007-d2c9-aff2-99e9177e5764</concept>
+		<concept>http://hdl.handle.net/11459/CCR_C-6147_ebed915e-f911-f128-cddc-466aa41c9c73</concept>
+		<concept>http://hdl.handle.net/11459/CCR_C-5316_2c6244b4-4f10-5e8e-49b6-26fbf7004791</concept>
+		<concept>http://hdl.handle.net/11459/CCR_C-6543_92dacb75-3098-0d5a-0665-94ddb6274f8c</concept>
+		<concept>http://purl.org/dc/terms/subject</concept>
+		<concept>http://purl.org/dc/elements/1.1/subject</concept>
+		
+		<pattern>/cmd:CMD/cmd:Components/cmdp:OLAC-DcmiTerms/cmdp:subject/@olac-linguistic-field</pattern>
+		<pattern>/cmd:CMD/cmd:Components/cmdp:OLAC-DcmiTerms/cmdp:subject[@dcterms-type="LCSH"]/text()</pattern>
+		<pattern>/cmd:CMD/cmd:Components/cmdp:mods/cmdp:subject/cmdp:Topic/text()</pattern>
+		<pattern>/cmd:CMD/cmd:Components/cmdp:media-session-profile/cmdp:media-session/cmdp:Content/cmdp:Topic/text()</pattern>
+		<!--  BAS -->
+		<pattern>/cmd:CMD/cmd:Components/cmdp:media-session-profile/cmdp:media-session/cmdp:Content/cmdp:Task/text()</pattern>
+		<!--  BAS -->
+		<pattern>/cmd:CMD/cmd:Components/cmdp:media-corpus-profile/cmdp:Corpus/cmdp:Topic/text()</pattern>
+		<!--  BAS media-corpus-profile -->
+		<pattern>/cmd:CMD/cmd:Components/cmdp:IDSAGD_Event/cmdp:IDSAGD_SpeechEvent/cmdp:Topic/text()</pattern>
+		<!-- IDS IDSAGD_Event -->
+		<pattern>/cmd:CMD/cmd:Components/cmdp:IDSAGD_Corpus/cmdp:Corpus/cmdp:Modality/cmdp:Modality/text()</pattern>
+		<!-- IDS IDSAGD_Corpus -->
+		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:teiHeader/cmdp:profileDesc/cmdp:textClass</blacklistPattern>
+		<!-- BBAW -->
+	</property>
+	
+	<property name="spatiotemporalCoverage">
+		<!-- investigate additional concepts in CCR -->
+		<!-- vlo:temporalCoverage -->
+			
+		<concept>http://hdl.handle.net/11459/CCR_C-2502_747eb0cd-03e9-cffb-34cc-d0c8c77e4c5a</concept>
+		<!-- dc:coverage restricted to temporal coverage -->
+		<concept>http://hdl.handle.net/11459/CCR_C-3664_eb600f47-5123-efbe-251b-d952c65fc847</concept>
+		<!-- “Basic time coverage information.” -->
+		<concept>http://hdl.handle.net/11459/CCR_C-4343_0d6e80e7-6f6c-5497-eac6-29b95a5fa9ec</concept>
+		<!-- Intervall. Described as “a : a space of time between events or states” -->
+		<concept>http://hdl.handle.net/11459/CCR_C-5742_66aaccdd-f1d0-a6a6-a4fb-efa704e06d8b</concept>
+		<!-- End time. Described as “Time at which an event ends”. -->
+		<concept>http://hdl.handle.net/11459/CCR_C-3654_f1608e88-95e6-4233-5d21-5312e76de32d</concept>
+		<!-- Start range. Described as “The beginning of a range.” used in the component TimeCoverage http://catalog.clarin.eu/ds/ComponentRegistry/?item=clarin.eu:cr1:c_1349361150714 -->
+		<concept>http://hdl.handle.net/11459/CCR_C-3655_bc4c2656-2946-0be9-49f0-021a811e531b</concept>
+		<!-- End range. Described as “The end of a range.” used in the component TimeCoverage http://catalog.clarin.eu/ds/ComponentRegistry/?item=clarin.eu:cr1:c_1349361150714 -->
+		
+		<pattern>/cmd:CMD/cmd:Components/cmdp:OLAC-DcmiTerms/cmdp:coverage/text()</pattern>
+		<!-- dc:coverage, also contains spatial coverage info -->
+		<pattern>/cmd:CMD/Components/cmdp:teiHeader/cmdp:fileDesc/cmdp:sourceDesc/cmdp:biblFull/cmdp:publicationStmt/cmdp:date[@type="publication"]/text()</pattern>
+		<!-- BBAW teiHeader -->
+		<pattern>/cmd:CMD/cmd:Components/cmdp:teiHeader/cmdp:fileDesc/cmdp:publicationStmt/cmdp:date[@type="publication"]/text()</pattern>
+		<!-- BBAW teiHeader -->
+		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:TextCorpusProfile/cmdp:Project/cmdp:Duration</blacklistPattern>
+		<!-- IMS TextCorpusProfile -->
+		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:ToolProfile/cmdp:Project/cmdp:Duration</blacklistPattern>
+		<!-- IMS ToolProfile -->
+		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:LexicalResourceProfile/cmdp:Project/cmdp:Duration/cmdp:CompletionYear</blacklistPattern>
+		<!-- IMS c:LexicalResourceProfile -->
+		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:MultimodalCorpus/cmdp:Project/cmdp:Duration/cmdp:CompletionYear</blacklistPattern>
+		<!-- c:MultimodalCorpus -->
+		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:MultimodalCorpus/cmdp:Publications/cmdp:Publication/cmdp:PublicationDate</blacklistPattern>
+		<!-- c:MultimodalCorpus -->
+	</property>
+</properties>
