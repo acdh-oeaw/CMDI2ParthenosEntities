@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <properties>
-	<property name="id" />
+	<!-- <property name="id" />  -->
 	
 	<property name="otherIDs">
 		<concept name="persistent identifier">http://hdl.handle.net/11459/CCR_C-2573_ae7c2548-8a86-ab6e-7099-e28b7697d1a2</concept>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <parthenos-entities >	
 	
-	<entity name="volatileDataset">
+	<entity name="VOLATILE_DATASET">
 		
 		<!-- Object properties -->
 		<xi:include href="object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>	
@@ -11,7 +11,7 @@
 
 	</entity>
 	
-	<entity name="persistentDataset">
+	<entity name="PERSISTENT_DATASET">
 	
 		<!-- Object properties -->
 		<xi:include href="object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
@@ -25,7 +25,7 @@
 	</entity>	
 	
 
-	<entity name="volatileSoftware" >
+	<entity name="VOLATILE_SOFTWARE" >
 	
 		<!-- Object properties -->
 		<xi:include href="object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
@@ -36,7 +36,7 @@
 	</entity>
 	
 	
-	<entity name="persistentSoftware">
+	<entity name="PERSISTENT_SOFTWARE">
 	
 		<!-- Object properties -->
 		<xi:include href="object.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
