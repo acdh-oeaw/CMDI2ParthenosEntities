@@ -17,6 +17,5 @@
 	<property name="filesize">
 		<concept name="size">http://hdl.handle.net/11459/CCR_C-2580_6dfe4e09-1c61-9b24-98ad-16bb867860fe</concept>
 		<concept name="size unit">http://hdl.handle.net/11459/CCR_C-2583_5f5cb491-1037-8d46-d685-ccebfc0233f7</concept>
-		<fallback-patterns />
 	</property>
 </properties>

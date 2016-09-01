@@ -2,16 +2,20 @@
 <properties>
 	
 	<property name="encodingType">
-		<pattern>cmd:CMD/cmd:Resources/cmd:ResourceProxyList/cmd:ResourceProxy/cmd:ResourceType/@mimetype</pattern>
+		<!--  handled in code
+			<pattern>/cmd:CMD/cmd:Resources/cmd:ResourceProxyList/cmd:ResourceProxy/cmd:ResourceType/@mimetype</pattern>
+		-->
 		
 		<!-- vlo:format -->
 		<concept name="mime type">http://hdl.handle.net/11459/CCR_C-2571_2be2e583-e5af-34c2-3673-93359ec1f7df</concept>
 		<concept>http://purl.org/dc/terms/format</concept>	
 	</property>
 	
-	<property name="schema">	
-		<pattern>cmd:CMD/@xsi:schemaLocation</pattern>
-		<pattern>ccmd:CMD/cmd:Header/cmd:MdProfile</pattern>
+	<property name="schema">
+		<!--  this is very hard to generate in a generic way, in current implementation it is not matched automatically but rather manually -->	
+		<pattern>/cmd:CMD/@xsi:schemaLocation</pattern>
+		
+		<pattern>/cmd:CMD/cmd:Header/cmd:MdProfile/text()</pattern>
 	</property>
 	
 	<property name="subject">
