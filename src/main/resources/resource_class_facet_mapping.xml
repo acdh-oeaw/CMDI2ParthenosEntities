@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+	<!-- tool -> software or a service? -->
+	<type entity="software">
+		<reference value="Software"/>
+		<reference value="Tool"/>
+		<reference value="Tools"/>
+		<reference value="Web application"/>
+	</type>
+	
+	<type entity="service">
+		<reference value="Service"/>
+		<reference value="ToolService"/>
+		<reference value="Web service"/>
+		<reference value="WebService"/>
+	</type>
+	
+	<!-- Dataset by default -->
+	
+</mappings>

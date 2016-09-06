@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+	<type entity="software">
+		<reference value="clarin.eu:cr1:p_1288172614017" name="BamdesTool"/>
+		<reference value="clarin.eu:cr1:p_1297242111880" name="AnnotationTool" /> <!-- ? does it fit -->		
+		<reference value="clarin.eu:cr1:p_1297242111879" name="Tool" /><!-- tool -> software or service -->
+		<reference value="clarin.eu:cr1:p_1290431694581" name="ToolProfile"/>
+		<reference value="clarin.eu:cr1:p_1360230992146" name="ToolService" />
+		<reference value="clarin.eu:cr1:p_1311927752306" name="ToolService" />
+		<reference value="clarin.eu:cr1:p_1469541567394" name="WebApplication" />
+	</type>
+	
+	<type entity="service">
+		<reference value="clarin.eu:cr1:p_1423750293168" name="BASWebService" />
+		<reference value="clarin.eu:cr1:p_1381926654686" name="BASWebService" />
+		<reference value="clarin.eu:cr1:p_1324638957718" name="BASWebService" />
+		<reference value="clarin.eu:cr1:p_1311927752335" name="CLARINWebService"/>		
+		<reference value="clarin.eu:cr1:p_1469541567396" name="TextImagerWebService" />
+		<reference value="clarin.eu:cr1:p_1311927752306" name="WebLichtWebService"/>
+		<reference value="clarin.eu:cr1:p_1295178776924" name="serviceDescription"/>
+	</type>
+	
+	<!-- Dataset by default -->
+	
+</mappings>
